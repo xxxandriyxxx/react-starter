@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import {UserCard} from './components/UserCard'
 import './App.css';
 
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className={'wrapper'}>
+            <UserCard
+                name={'Taras'}
+                age={23}
+                gender={'male'}
+                hobbies={'dota2'}/>
+
+            <UserCard
+                name={'Andriy'}
+                age={30}
+                gender={'male'}
+                hobbies={'money'}/>
+
+
+        </div>
+    );
 }
 
 export default App;
